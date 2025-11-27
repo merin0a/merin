@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asingan Taekwondo Ichthus - Contact</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="header-inner">
+      <img id="header-img" src="taekwondo_logo.jpg" alt="Taekwondo club logo">
+      <nav id="nav-bar" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="location.html">Location</a>
+        <a class="nav-link" href="pricing.html">Pricing</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="contact" class="section">
+      <h1>Contact Us</h1>
+      <p>Message us to join or for inquiries!</p>
+      <h3>Facebook:</h3>
+      <p>Ichthus Taekwondo Center</p>
+
+      <form id="form" action="#" method="POST">
+        <label class="visually-hidden" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer" class="section">
+    <p>© <span id="year"></span> Asingan Taekwondo Ichthus. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
