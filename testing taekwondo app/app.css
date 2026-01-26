@@ -193,29 +193,9 @@ input[type="email"] {
   padding: 60px 20px;
 }
 
-
-/* ACTIVE NAVBAR LINK */
 .nav-link.active {
-  background: #0077ff;
+  background: #222;
   color: white;
   border-radius: 6px;
   padding: 8px 12px;
-}
-
-/* === DIVIDER BETWEEN NAV BUTTONS === */
-#nav-bar .nav-link {
-  position: relative;
-  padding: 8px 12px;
-}
-
-/* Create divider line except on last item */
-#nav-bar .nav-link:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2px;
-  height: 20px;
-  background: #ddd;
 }
