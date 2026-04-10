@@ -1,27 +1,21 @@
-// Selecting elements
-const mainBtn = document.getElementById('mainBtn');
-const contentDiv = document.getElementById('contentDiv');
-const backBtn = document.getElementById('backBtn');
-const changeBtn = document.getElementById('changeBtn');
+script.js
+const mainBtn = document.getElementById("mainBtn");
+const contentBox = document.getElementById("contentBox");
 
-const displayImg = document.getElementById('displayImg');
-const description = document.getElementById('description');
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
 
-// Show the div and hide the main button
-mainBtn.addEventListener('click', () => {
-    contentDiv.style.display = 'block';
-    mainBtn.style.display = 'none';
-});
+const image = document.getElementById("image");
+const description = document.getElementById("description");
 
-// Hide the div and show the main button again
-backBtn.addEventListener('click', () => {
-    contentDiv.style.display = 'none';
-    mainBtn.style.display = 'block';
-});
+mainBtn.addEventListener("click", () => {
+contentBox.style.display = "block";
+mainBtn.style.display = "none";});
 
-// Change the image and text content
-changeBtn.addEventListener('click', () => {
-    // You can replace these URLs/Text with your specific data
-    displayImg.src = "https://via.placeholder.com/200/0000FF/FFFFFF?text=New+Object";
-    description.textContent = "The content has been successfully updated!";
-});
+btn1.addEventListener("click", () => {
+image.src = "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg";
+description.textContent = "New content loaded. Object changed.";});
+
+btn2.addEventListener("click", () => {
+contentBox.style.display = "none";
+mainBtn.style.display = "inline-block";});
